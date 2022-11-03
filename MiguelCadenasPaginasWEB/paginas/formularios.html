@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Formularios en HTML</title>
+    <meta name="description" content="Pagina para crear formularios en html" />
+    <link rel="stylesheet" href="estilo3.css" />
+  </head>
+  <body>
+    <h1>Ejemplos de Formularios en HTML</h1>
+    <br />
+    <form id="formulario1" action="">
+      <!--fieldset: permite crear el formularo, legend: titulo del formulario
+        input: crear un campo de texto-->
+      <fieldset>
+        <legend>INFORMACIÓN PERSONAL</legend>
+        <br />
+        <br /><br />
+        <span class="rojo"> * </span>
+        <input type="text" required placeholder="Escribe tu nombre" />
+        <input type="text" placeholder="Apellidos" />
+        <br />
+        <input type="number" placeholder="Edad" min="15" max="80" />
+        <br />
+        <input
+          type="text"
+          style="text-transform: uppercase"
+          id="rfc"
+          placeholder="Escribe tu RFC con homoclave"
+          maxlength="13"
+        />
+        <br />
+        <input type="text" placeholder="Tipo de sangre" />
+        <br />
+        <h4>Genero:</h4>
+        <input type="radio" name="genero" /><label for="">Mujer</label>
+        <input type="radio" name="genero" /><label for="">Hombre</label>
+        <input type="radio" name="genero" /><label for="">Otro</label>
+        <br />
+        <input
+          type="tel"
+          placeholder="9999888888"
+          maxlength="12"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+        <label for="">Formato: 123-456-7890</label>
+        <br /><br />
+        <input type="email" placeholder="Escribe tu email" />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>ACCESO A LA PLATAFORMA</legend>
+        <input type="text" placeholder="Usuario" />
+        <br />
+        <input type="password" placeholder="contraseña" />
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>CURSOS CECATI</legend>
+        <input type="checkbox" name="paginas" /><label for=""
+          >Curso de paginas web</label
+        ><br />
+        <input type="checkbox" name="php" /><label for=""
+          >Curso de Aplicaciones web con PHP </label
+        ><br />
+        <input type="checkbox" name="interfaces" /><label for=""
+          >Curso de diseño de interfaces web</label
+        ><br />
+      </fieldset>
+      <br />
+      <br />
+      <select name="escuelas" id="">
+        <option value="">Escoge tu Escuela</option>
+        <option value="">ITM</option>
+        <option value="">UADY</option>
+        <option value="">Unimayab</option>
+        <option value="">Modelo</option>
+      </select>
+      <br />
+      <br />
+      <textarea 
+      name="" 
+      id=""
+      placeholder="Dejame tu comentario"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Enviar" />
+      <!-- elemento boton -->
+    </form>
+  </body>
+</html>

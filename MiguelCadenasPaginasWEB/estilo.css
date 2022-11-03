@@ -1,0 +1,571 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: white;
+  line-height: 24px;
+  font-family: "Mukta Vaani", sans-serif;
+  transition: 0.5s;
+}
+body.dark {
+  color: white;
+  background-color: #333;
+}
+header {
+  height: 700px;
+  background-image: url(imagenes/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 50px;
+}
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+#nombre {
+  color: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-family: "VT323", monospace;
+  font-weight: 700;
+  font-size: 80px;
+  padding-bottom: 30px;
+}
+header h3 {
+  font-family: "VT323", monospace;
+  font-size: 40px;
+}
+.azul {
+  color: #0c99e8;
+}
+.azultitulo{
+  color: #0c99e8;
+}
+body.dark .azultitulo{
+  color: #b93c07;
+}
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: #ff6700;
+  color: black;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: white;
+}
+#arriba {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu {
+  display: none;
+  color: #0c99e8;
+}
+.menu {
+  display: flex;
+}
+nav {
+  width: 1200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #0c99e8;
+  padding: 10px 30px;
+  border-radius: 15px;
+  transition: all 0.5s;
+  margin: 30px;
+}
+body.dark nav a{
+  background-color: #b93c07;
+}
+
+nav a:hover {
+  color: black;
+  background-color: #e83300;
+}
+body.dark nav a:hover{
+  background-color: #00ffff;
+}
+.titulo {
+  width: 200px;
+  border-left: 10px #0c99e8 solid;
+  border-top: 10px #e83300 solid;
+}
+.titulo h2 {
+  font-size: 30px;
+  padding: 15px 0 15px 15px;
+}
+.titulo p {
+  font-size: 20px;
+  padding: 10px 0 10px 15px;
+}
+.titulo hr {
+  border: 0;
+  height: 2px;
+  background-color: #0c99e8;
+  width: 150px;
+}
+.infopersonal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infopersonal article {
+  max-width: 750px;
+}
+.infopersonal figure {
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px #777 solid;
+  padding: 5px 5px 0px 5px;
+}
+.infopersonal figure img {
+  width: 100%;
+  object-fit: cover;
+}
+.infopersonal h2 {
+  padding-bottom: 15px;
+}
+.infopersonal h3 {
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+.infopersonal hr {
+  width: 95%;
+  margin: auto;
+}
+.infopersonal p {
+  line-height: 20px;
+  padding-bottom: 10px;
+  text-align: justify;
+}
+.btn_azul {
+  text-decoration: none;
+  color: white;
+  background-color: #0c99e8;
+  border-radius: 60px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.btn_azul:hover {
+  color: black;
+  background-color: #00ffff;
+}
+.marcada {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+body.dark .marcada {
+  color: white;
+}
+.btn_naranja {
+  border-radius: 60px;
+  background-color: #e83300;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.btn_naranja:hover {
+  color: black;
+  background-color: #ff0801;
+}
+.btn_gris {
+  border-radius: 60px;
+  background-color: #666;
+  color: white;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.btn_gris:hover {
+  background-color: black;
+}
+body.dark .btn_gris:hover {
+  color: black;
+  background-color: white;
+}
+.datospersonales {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.email {
+  text-decoration: none;
+  color: #333;
+}
+body.dark .email {
+  color: white;
+}
+.naranja {
+  color: #ff6700;
+}
+body.dark .naranja{
+  color: #0c99e8;
+}
+
+.programas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.programas article {
+  border: 3px #666 solid;
+  text-align: center;
+  padding: 30px;
+  width: 310px;
+  margin-bottom: 15px;
+}
+.programas h3 {
+  padding: 15px 0px;
+}
+.programas p {
+  font-size: 14px;
+}
+.calltoaction {
+  background-color: #0c99e8;
+  color: white;
+  padding: 30px 15px;
+}
+.texto h2 {
+  padding: 15px 0px;
+}
+.texto p {
+  padding-bottom: 15px;
+}
+#cont_all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portafolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.portafolio a {
+  opacity: 1;
+  transition: 0.5s;
+}
+.portafolio a:hover {
+  opacity: 0.5;
+}
+.portafolio figure {
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+.portafolio figure img {
+  border-radius: 10px;
+  border: 5px #0048ff solid;
+  width: 100%;
+}
+#contacto h3 {
+  padding-left: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+input {
+  border-radius: 5px;
+  border: 1px #999 solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: "Mukta Vaani", sans-serif;
+}
+textarea {
+  border-radius: 5px;
+  border: 1px #999 solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 200px;
+  resize: none;
+  font-family: "Mukta Vaani", sans-serif;
+}
+footer {
+  padding: 15px;
+  background-color: #b93c07;
+  color: white;
+}
+footer a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+footer a p {
+  padding: 15px;
+}
+footer a i {
+  font-size: 40px;
+}
+footer hr {
+  width: 95%;
+  height: 3px;
+  border: 0px;
+  background-color: #ff6700;
+  margin: auto;
+}
+.local {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.redesociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconosfooter i {
+  color: #ff6700;
+  padding-right: 20px;
+  font-size: 30px;
+}
+body.dark footer {
+  background-color: #0b6983;
+}
+body.dark footer hr {
+  background-color: #00ffff;
+}
+body.dark .iconosfooter i {
+  color: #0c99e8;
+}
+@media screen and (max-width: 770px) {
+  nav {
+    width: 100%;
+  }
+  nav div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  nav div a {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  #acercademi {
+    padding: 30px 15px;
+  }
+  .infopersonal article {
+    max-width: 450px;
+    margin: 15px;
+  }
+  .datospersonales {
+    flex-wrap: wrap;
+  }
+  #servicios {
+    padding: 30px 15px;
+  }
+  #portafolio {
+    padding: 30px 15px;
+  }
+  #contacto {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #arriba {
+    width: 95%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  header {
+    height: 700px;
+    background-size: cover;
+    padding: 20px;
+  }
+  nav {
+    width: 100%;
+    display: none;
+  }
+  nav div {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  nav a {
+    width: 100%;
+  }
+  #menu {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    display: block;
+  }
+  #nombre {
+    text-align: center;
+    color: white;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #nombre h1 {
+    font-size: 50px;
+  }
+  #nombre h3 {
+    font-size: 30px;
+  }
+  .infopersonal h3 {
+    text-align: justify;
+  }
+  .infopersonal figure {
+    display: none;
+  }
+  .datospersonales {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .datospersonales .nombre {
+    text-align: center;
+  }
+  .datospersonales .redes {
+    text-align: center;
+  }
+  .datospersonales .instituto {
+    text-align: center;
+  }
+  #cont_all {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .portafolio {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .linkos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .lineos {
+    text-align: center;
+  }
+  #contacto h3 {
+    padding: 15px;
+    font-size: 25px;
+    text-align: center;
+  }
+  #contacto form {
+    align-items: center;
+  }
+  #contacto button {
+    font-size: 25px;
+  }
+  .local {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer a {
+    margin-bottom: 15px;
+  }
+  .redesociales {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .iconosfooter {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 325px) {
+  nav div {
+    width: 65%;
+  }
+  header {
+    background-position: center center;
+  }
+  .infopersonal h3 {
+    text-align: center;
+  }
+  .infopersonal p {
+    text-align: center;
+  }
+  .linkos i {
+    display: none;
+  }
+}

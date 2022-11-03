@@ -1,0 +1,69 @@
+body {
+  font-family: Helvetica;
+}
+h1 {
+  text-align: center;
+}
+#formulario1 {
+  width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+legend {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+.rojo {
+  color: red;
+}
+input[type="tel"],
+input[type="password"],
+input[type="text"],
+input[type="email"] {
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #333;
+  width: 250px;
+  background-color: #f3f3f3;
+}
+input[type="number"] {
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #333;
+  width: 80px;
+  background-color: #f3f3f3;
+}
+input[type="submit"] {
+  background-color: #9a1010;
+  color: white;
+  border: 0;
+  padding: 10px 50px;
+  border-radius: 40px;
+}
+label {
+  font-size: 14px;
+  color: #07b1e4;
+}
+select {
+  border: 0;
+  padding: 10px;
+  width: 50%;
+  border-bottom: 5px #5dbcd9 solid;
+  background-color: transparent;
+}
+select:focus {
+  outline: none;
+  border-bottom: 5px red solid;
+}
+textarea{
+    resize: none;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+}

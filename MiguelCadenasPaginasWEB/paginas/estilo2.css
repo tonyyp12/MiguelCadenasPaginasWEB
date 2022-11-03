@@ -1,0 +1,83 @@
+body{
+    font-family: Helvetica;
+}
+h1 {
+  text-align: center;
+}
+h2{
+    text-align: center;
+}
+.cabecera_tabla {
+  font-weight: bold;
+  background-color: peru;
+  padding: 10px 30px;
+  color: white;
+  border: 0px !important;
+}
+.tercera {
+  background-color: #dcdcdc;
+}
+#edad {
+  width: 200px;
+}
+#tabla1 {
+    width: 1200px;
+  margin: auto;
+  border-spacing: 5px;
+  text-align: center;
+  border: 1px #ccc solid;
+}
+#tabla1 td{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px #ccc solid;
+}
+#tabla2{
+margin: auto;
+text-align: center;
+border: 1px #37a3f8 solid;
+width: 600px;
+border-spacing: 10px;
+border-radius: 5px;
+}
+#tabla2 td{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px #37a3f8 solid;
+}
+#titulo{
+    background-image: url(imagenes/Fondo_tablas.webp);
+}
+.datos{
+    color: gainsboro;
+    text-transform: uppcase;/*MAYUSCULA*/
+    font-weight: bold;
+    height: 100px;
+    font-size: 22px;
+}
+#negritas{
+    font-weight: bold;
+}
+.azul{
+    background-color: #c4e3fc;
+}
+#tabla3{
+    text-align: center;
+    border: 1px red solid;
+    width: 1000px;
+    margin: auto;
+    border-spacing: 10px;
+    border-radius: 10px;
+}
+#tabla3 td{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px #666 solid;
+}
+.gris{
+    background-color: #999;
+    color: white;
+}
+.gris td{
+    border: 0px !important;
+}

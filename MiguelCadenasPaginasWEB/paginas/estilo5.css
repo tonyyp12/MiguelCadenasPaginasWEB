@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #333;
+    line-height: 24px;
+}
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+#logo{
+    margin: auto;
+    padding: 20px 10px;
+    max-width: 280px;
+}
+#logo img{
+    width: 100%;
+}
+nav{
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border:1px orchid solid;
+}
+nav a{
+    text-decoration: none;
+    color: #28567a;
+    background-color: transparent;
+    border: 2px #28567a solid;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+nav a:hover{
+    color: white;
+    background-color: #28567a;
+}
+#contenedor_menu{
+    padding-left: 20px;
+}
+#menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #28567a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 40px;
+    text-decoration: none;
+}
+#contenedor{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+#contenedor a{
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+#contenedor h1{
+    font-size: 25px;
+    color: #cc9000;
+    padding: 15px 0px;
+}
+#contenedor h3{
+    padding-bottom: 20px;
+}
+.info{
+    width: 48%;
+}
+.foto{
+    width: 48%;
+}
+.foto img{
+    width: 100%;
+}
+footer{
+    background-color: #28567a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 35px 10px;
+}
+/*IPAD*/
+@media screen and (max-width: 768px){
+    nav a{
+        padding: 10px 20px;
+    }
+    #contenedor a{
+        padding: 10px 20px;
+    }
+}
+/*MOVIL*/
+@media screen and (max-width: 480px){
+    nav{
+        display: none;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    nav a{
+        width: 100%;
+        display: block;
+        border-radius: 0px;
+        border: 0px;
+        border-bottom: 1px #28567a dotted;
+    }
+    #contenedor{
+        padding: 15px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .info,.foto{
+        width: 100%;
+    }
+    #menu{
+        display: flex;
+    }
+}

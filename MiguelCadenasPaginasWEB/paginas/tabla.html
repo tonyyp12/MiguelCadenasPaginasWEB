@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de tablas HTML</title>
+    <meta name="description" content="Pagina para crear tablas en html" />
+    <link rel="stylesheet" href="estilo2.css" />
+  </head>
+  <body>
+    <h1>Ejemplos de tablas HTML</h1>
+    <br />
+    <!--
+    table: es el caja contenedora de las celdas de la tabla
+    tr: sirve para formar las filas de las tablas
+    td: sirve para formar las columnas de la tabla
+    -->
+    <h2>TABLA 1</h2>
+    <br /><br />
+    <table id="tabla1" border="1">
+      <tr>
+        <td class="cabecera_tabla">Nombre</td>
+        <td class="cabecera_tabla">Apellido</td>
+        <td id="edad" class="cabecera_tabla">Edad</td>
+        <td class="cabecera_tabla">Curso</td>
+      </tr>
+      <tr>
+        <td>Eduardo</td>
+        <td>Soria Gomez</td>
+        <td>12</td>
+        <td>Primero D</td>
+      </tr>
+      <tr class="tercera">
+        <td>Carlos</td>
+        <td>Perez Diaz</td>
+        <td>14</td>
+        <td>Tercero A</td>
+      </tr>
+      <tr>
+        <td>Martín</td>
+        <td>Peira Silva</td>
+        <td>11</td>
+        <td>Primero B</td>
+      </tr>
+      <tr class="tercera">
+        <td>Juan</td>
+        <td>Perez Lopez</td>
+        <td>14</td>
+        <td>Segundo E</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <h2>TABLA 2</h2>
+    <br /><br />
+    <table id="tabla2">
+      <tr class="datos">
+        <td colspan="3" id="titulo">
+          <span>CALENDARIO DE CURSOS CECATI</span>
+        </td>
+        <!--colspan: son los lugares(columnas) que ocupara el texto-->
+      </tr>
+      <tr id="negritas">
+        <td>Sábado</td>
+        <td class="azul">Domingo</td>
+        <td>Lunes</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Curso HTML y Curso Photoshop CC</td>
+        <!--rowspan: son las filas que ocupara el texto-->
+        <td class="azul">Curso CSS</td>
+        <td>Curso Javascript</td>
+      </tr>
+      <tr>
+        <td class="azul">Curso Animate CC</td>
+        <td>Curso de Tinkercad 3D</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h2>TABLA 3</h2>
+    <br />
+    <table id="tabla3">
+        <!--Fila1-->
+      <tr>
+        <td colspan="4" class="cabecera_tabla">
+        DIFERENCIAS ENTRE EL HOMBRE Y EL PERRO
+        </td>
+      </tr>
+      <!--Fila2-->
+      <tr class="negritas gris">
+        <td rowspan="2">DIFERENCIAS</td>
+        <td colspan="2">PERRO</td>
+        <td rowspan="2">HOMBRE</td>
+      </tr>
+      <!--Fila3-->
+      <tr class="gris">
+        <td>PEQUEÑO</td>
+        <td>GRANDE</td>
+      </tr>
+      <!--Fila4-->
+      <tr>
+        <td>Duracion de crecimiento</td>
+        <td>10 meses</td>
+        <td>18 a 24 meses</td>
+        <td>16 años</td>
+      </tr>
+      <!--Fila5-->
+      <tr>
+        <td>Tipo de gestación</td>
+        <td colspan="2">58 a 63 días</td>
+        <td>9 meses</td>
+      </tr>
+      <!--Fila6-->
+      <tr>
+        <td>Duración de la vida del pelo/cabello</td>
+        <td colspan="2">1 año</td>
+        <td>2 a 7 años</td>
+      </tr>
+    </table>
+    <br /><br />
+  </body>
+</html>

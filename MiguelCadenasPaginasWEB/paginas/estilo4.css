@@ -1,0 +1,79 @@
+/*CSS de Ejercicio1*/
+body {
+  font-family: Arial;
+}
+#seccion_etiqueta {
+  width: 1000px;
+  margin: auto;
+  border: 5px red solid;
+  padding: 15px;
+}
+h1 {
+  background-color: #e3e3e3;
+  color: #1ab0ea;
+  text-align: center;
+  border: 1px green solid;
+}
+#contenedor_MENU{
+  background-color: #e3e3e3;/*Color del fondo*/
+  padding: 20px;
+  text-align: center;
+}
+#contenedor_MENU a{
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #0d78e7;
+  padding: 10px 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition:all 0.5s;
+}
+#contenedor_MENU a:hover{
+  background-color: black;
+  padding: 15px 60px;
+}
+.parrafo {
+  text-align: justify;
+}
+.texto_azul {
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;/*para colocar negritas*/
+    text-decoration: underline;/*para subrayar*/
+    font-style: italic;/*para colocar cursiva*/
+}
+#contenedor_Logo_HTML{
+  text-align: center;
+}
+#contenedor_Logo_HTML img{
+  width: 200px;
+}
+iframe{
+  width: 100%;
+  height: 500px;
+  border: 10px rgb(233, 122, 18) solid;
+
+}
+/*CSS de Ejercicio2*/
+.negritas{
+  font-weight: bold;
+}
+ul{
+  padding-left: 60px;
+}
+li{
+  text-align: justify;
+  line-height: 1.5;
+}
+.naranja{
+  font-weight: bold;
+  color: orangered;
+}
+#Logo_CSS{
+  width: 200px;
+  margin: auto;
+  display: block;
+  border: cyan solid;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Menu Responsive</title>
+    <link rel="stylesheet" href="estilo5.css">
+    <script src="https://kit.fontawesome.com/66f5e943e2.js" crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header class="ancho">
+        <div id="logo">
+            <img src="imagenes/pullrequest-logo.svg" alt="">
+        </div>
+    </header>
+    <div class="ancho" id="contenedor_menu">
+        <a href="#" id="menu">
+            <i class= "fas fa-bars fa-1x"></i>
+        </a>
+    </div>
+    <nav class="ancho">
+        <a href="#">Inicio</a>
+        <a href="#">Empresa</a>
+        <a href="#">Servicios</a>
+        <a href="#">Clientes</a>
+        <a href="#">Ubicacion</a>
+        <a href="#">Contactanos</a>
+    </nav>
+    <section class="ancho" id="contenedor">
+        <article class="info">
+            <h1>Creacion de paginas web</h1>
+            <h3>Curso básico de HTML5 y CSS3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab maiores at atque exercitationem repellat neque. Optio veritatis sequi ratione dolore ea veniam eligendi doloribus, recusandae, laboriosam, obcaecati adipisci voluptas at.
+            </p>
+            <br />
+            <a href="#">Leer mas</a>
+        </article>
+        <div class="foto">
+            <img src="http://lorempixel.com/500/300" alt="Foto Aleatoria">
+        </div>
+    </section>
+    <footer class="ancho">
+        <a href="">@miguelcadenas</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        //SCRIPT PARA EL MENU DESPLEGABLE
+        $("#menu").click(function (){
+            $("nav").slideToggle();
+        });
+    </script>
+</body>
+</html>
